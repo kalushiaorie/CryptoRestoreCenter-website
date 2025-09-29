@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CryptoRestoreCenter — Wallet recovery & dispute specialists</title>
+  <meta name="description" content="CryptoRestoreCenter — Restore wallets, call back lost crypto, file crypto disputes, and fix bad wallets. Fast, secure, and professional assistance." />
+  <style>
+    :root{--accent:#0b76ff;--muted:#6b7280;--bg:#0f1724;--card:#0b1220;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:linear-gradient(180deg,#071021 0%, #071827 100%);color:#e6eef8;line-height:1.45}
+    .container{max-width:1100px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6cf);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04101a}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .service{padding:14px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .service h3{margin:0 0 6px;font-size:16px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#04101a;font-weight:600;cursor:pointer}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#d6e6ff}
+    form{display:flex;flex-direction:column;gap:10px}
+    input,select,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    textarea{min-height:120px;resize:vertical}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.container{margin:20px;padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CRC</div>
+        <div>
+          <h1>CryptoRestoreCenter</h1>
+          <div class="lead">Secure wallet recovery · Lost funds callbacks · Dispute filing · Wallet repair</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services" style="color:var(--muted);text-decoration:none;margin-right:12px">Services</a>
+        <a href="#how" style="color:var(--muted);text-decoration:none;margin-right:12px">How it works</a>
+        <a href="#contact" style="color:var(--muted);text-decoration:none">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero" style="margin-top:18px">
+      <section>
+        <div class="card">
+          <h2>We get your crypto back — professionally & discreetly</h2>
+          <p class="lead">CryptoRestoreCenter helps individuals and businesses recover access to wallets, retrieve lost funds when possible, file disputes, and repair wallet issues caused by bugs or bad configurations. We respect privacy and follow secure procedures.</p>
+
+          <div id="services" class="services">
+            <article class="service">
+              <h3>Restore wallet</h3>
+              <p class="lead" style="color:var(--muted)">Seed/phrase recovery, keystore repair, and step-by-step wallet access restoration.</p>
+            </article>
+
+            <article class="service">
+              <h3>Call back lost crypto</h3>
+              <p class="lead" style="color:var(--muted)">Investigation and outreach to recover mis-sent or defrauded tokens where technically feasible.</p>
+            </article>
+
+            <article class="service">
+              <h3>File crypto dispute</h3>
+              <p class="lead" style="color:var(--muted)">Prepare and submit dispute reports to exchanges, custodians, and legal channels.</p>
+            </article>
+
+            <article class="service">
+              <h3>Fix bad wallet</h3>
+              <p class="lead" style="color:var(--muted)">Repair corrupted wallets, incorrect derivation paths, and token compatibility issues.</p>
+            </article>
+          </div>
+
+          <div class="cta">
+            <a href="#contact" class="btn">Get a free consultation</a>
+            <a href="#how" class="ghost" style="padding:10px 14px;border-radius:10px;display:inline-block">How it works</a>
+          </div>
+        </div>
+
+        <section id="how" style="margin-top:14px">
+          <div class="card">
+            <h3>How it works</h3>
+            <ol style="color:var(--muted)">
+              <li>Submit a secure request describing the issue (no private keys in the form).</li>
+              <li>We perform a risk assessment and give you a recovery plan and price estimate.</li>
+              <li>If you approve, we proceed using secure channels and provide status updates.</li>
+              <li>We deliver recovery/reporting results and advise on preventing future incidents.</li>
+            </ol>
+          </div>
+        </section>
+
+      </section>
+
+      <aside>
+        <div class="card" id="contact">
+          <h3>Request help</h3>
+          <p style="color:var(--muted)">Please do <strong>not</strong> paste private keys or full seed phrases. Instead describe the issue and include wallet/address and timestamps.</p>
+
+          <form id="contactForm" action="mailto:you@yourdomain.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+            <label>
+              Your name
+              <input type="text" name="name" required placeholder="Full name" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+
+            <label>
+              Phone (optional)
+              <input type="text" name="phone" placeholder="+234 801 234 5678" />
+            </label>
+
+            <label>
+              Service required
+              <select name="service">
+                <option>Restore wallet</option>
+                <option>Call back lost crypto</option>
+                <option>File crypto dispute</option>
+                <option>Fix bad wallet</option>
+              </select>
+            </label>
+
+            <label>
+              Wallet address / ID (if applicable)
+              <input type="text" name="wallet" placeholder="0x... or address / account ID" />
+            </label>
+
+            <label>
+              Describe the problem (do NOT paste private keys or seed phrases)
+              <textarea name="message" placeholder="What happened? When? Any tx hashes?" required></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send request</button>
+
+            <p style="color:var(--muted);font-size:13px;margin-top:8px">By sending this request you agree to our privacy terms. We will handle your information confidentially.</p>
+          </form>
+
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Quick contacts</h4>
+          <p style="color:var(--muted);margin:6px 0">Email: <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+          <p style="color:var(--muted);margin:6px 0">Phone/WhatsApp: +234 801 234 5678</p>
+          <p style="color:var(--muted);margin:6px 0">Location: Remote / By appointment</p>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> CryptoRestoreCenter — All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    function validateForm(){
+      var msg = document.querySelector('textarea[name=message]').value || '';
+      if(msg.length < 15){ alert('Please give a bit more detail (at least 15 characters).'); return false }
+      return true
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
